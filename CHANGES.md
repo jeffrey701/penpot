@@ -95,6 +95,7 @@
 - Fix crash in share-link viewer when a team member's email is missing `@` or has no domain TLD (by @boskodev790) [Github #9120](https://github.com/penpot/penpot/pull/9120)
 - Fix crash when pasting a component with variants from an external shared library into a file that uses that library (by @FairyPigDev) [Github #8144](https://github.com/penpot/penpot/issues/8144)
 - Remove `corepack` from the MCP local launcher so it runs on Node.js 25+, where corepack is no longer bundled (by @TheAifam5) [Github #8877](https://github.com/penpot/penpot/issues/8877)
+- Fix the "Download as Penpot file" export dialog using checkbox styling for its mutually-exclusive options; the underlying `<input>` was already `type="radio"` and the visual now matches with a circular radio indicator (by @jeffrey701) [Github #8083](https://github.com/penpot/penpot/issues/8083)
 - Fix Copy as SVG to produce a valid document for multi-shape selections and use `image/svg+xml` MIME type (by @RenzoMXD) [Github #9066](https://github.com/penpot/penpot/pull/9066)
 - Reset profile submenu state when the account menu closes (by @eureka0928) [Github #8947](https://github.com/penpot/penpot/issues/8947)
 - Preserve OpenType variant name table for custom fonts in the dashboard (by @rutherfordcraze) [Github #8924](https://github.com/penpot/penpot/issues/8924)

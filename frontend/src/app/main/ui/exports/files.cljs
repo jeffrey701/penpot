@@ -143,9 +143,9 @@
               ;;   (tr "files-download-modal.options.detach.title")
               ;;   (tr "files-download-modal.options.merge.message")
               ;;   (tr "files-download-modal.options.merge.title")
-              [:span {:class (stl/css-case :global/checked (= selected type))}
-               (when (= selected type)
-                 deprecated-icon/status-tick)]
+              [:span {:class (stl/css-case :global/checked (= selected type)
+                                           :global/unchecked (not= selected type))
+                      :role "presentation"}]
               [:div {:class (stl/css :option-content)}
                [:h3 {:class (stl/css :modal-subtitle)}
                 (tr (dm/str "files-download-modal.options." (d/name type) ".title"))]
